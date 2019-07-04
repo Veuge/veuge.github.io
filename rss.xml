@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Este es un Hotfix!]]></title><description><![CDATA[Recien comenzando.]]></description><link>https://gatsby-starter-blog-demo.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 04 Jul 2019 03:03:39 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[Hola a todos! soy Vero. Soy licenciada en informática, trato de ser autodidacta. Trabajo hace 2 años como Frontend Developer en una empresa…]]></description><link>https://gatsby-starter-blog-demo.netlify.com//29-05-2019-hello-world/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//29-05-2019-hello-world/</guid><pubDate>Tue, 21 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hola a todos! soy Vero. Soy licenciada en informática, trato de ser autodidacta. Trabajo hace 2 años como Frontend Developer en una empresa de outsourcing y estoy tratando de hacerlo cada vez mejor.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Este es un Hotfix!]]></title><description><![CDATA[Recien comenzando.]]></description><link>https://gatsby-starter-blog-demo.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 04 Jul 2019 03:51:31 GMT</lastBuildDate><item><title><![CDATA[Las cosas que leo]]></title><description><![CDATA[El sector de tecnología es muy cambiante y evoluciona rápidamente, es importante mantenerse al tanto de todas las novedades.Trato de hacerlo…]]></description><link>https://gatsby-starter-blog-demo.netlify.com//02-06-2019-things-i-read/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//02-06-2019-things-i-read/</guid><pubDate>Sun, 02 Jun 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;El sector de tecnología es muy cambiante y evoluciona rápidamente, es importante mantenerse al tanto de todas las novedades.&lt;/p&gt;
+&lt;p&gt;Trato de hacerlo lo mas que puedo aunque hay tantos recursos y tantos temas que a veces es dificil mantener el paso. De todas formas estas son las fuentes con las que me informo:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://news.ycombinator.com/&quot;&gt;Hacker news&lt;/a&gt; de YCombinator: esta es definitivamente la principal fuente de noticias e información que sigo. Los feeds de este sitio en general contienen noticias tecnológicas, noticias curiosas, entre otras. Generalmente hay un par que son de mi interés.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Twitter! si sigues a las personas correctas tu página inicial de twitter va a estar llena de recursos. Yo sigo a personas y páginas que en general aportan mucho en los temas que me interesan, por ejemplo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/b0rk&quot;&gt;Julia Evans&lt;/a&gt; tiene una manera genial de explicar las cosas con comics, que van desde medio a bajo nivel de Linux y ademas consejos de como debuggear, como ser mejor developer y más.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/dan_abramov&quot;&gt;Dan Abramov&lt;/a&gt; es uno de los desarrolladores de ReactJS y aporta al desarrollo de los DevTools de ReactNative. Es increíble como logra hacer tantas cosas a la vez, está pendiente de tweets respecto a ReactJS y responde muchas dudas que las personas tienen. Una vez respondió a mi tweet!!! (ve la imagen al terminar este post).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/UnaPibaGeek&quot;&gt;Sheila Berta&lt;/a&gt; esta chica argentina es especialista en seguridad informática, ha dado charlas en un montón de eventos incluyendo DEFCON y actualmente dicta un curso de Infosec en Buenos Aires.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/fideloper&quot;&gt;Chris Fidao&lt;/a&gt; aprendí muchas cosas de Linux con su libro &lt;a href=&quot;https://serversforhackers.com&quot;&gt;Servers for Hackers&lt;/a&gt; y cosas de Docker, tambien twittea respecto a Laravel.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/marcysutton&quot;&gt;Marcy Sutton&lt;/a&gt; es una genia en a11y y twittea muy buenos recursos para hacer de la web un lugar mas accesible para todos.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/SaraSoueidan&quot;&gt;Sara Soueidan&lt;/a&gt; es frontend developer, especialista en CSS, SVG y Javascript, su blog está lleno de artículos interesantes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/JavaScriptDaily&quot;&gt;JavaScript Daily&lt;/a&gt; publica siempre los nuevos paquetes de NPM que son tendencia en descargar, nuevos frameworks y en general recursos de Javascript de todo Internet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.fayerwayer.com/&quot;&gt;FayerWayer&lt;/a&gt; es una plataforma en español con noticias tecnológicas muy variadas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ese es un resumen de mis fuentes de información y noticias. Si tienes alguna más no dudes en escribirme!.&lt;/p&gt;
+&lt;p&gt;Como lo prometí este es mi tweet al que Dan Abramov respondió. Es como un trofeo para mi xD. &lt;/p&gt;
+&lt;p&gt;Saludos!&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b4ee015ac2edf5b63dfa70c704fb729d/b1c25/dan-abramov-tweet.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 97.5206611570248%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAADC0lEQVQ4y5VTO4/cVBS+0koUkUJHhZSCKh1lJBqkoESr/AVaCqiQotARyENRGiqUFEQURBQpUiAKIqIAEUJitdEmm514N37bM7ZnMt6xx+97fa8ffL7eLFQIjs4cfff4fj7fOcdD0mSlK08X4Sp4tQyjCMCbL+KsSIoqpywtaFaxrKJpSeumHZ2JBrFknPzx28Orn13cU9TtnWdb2zt/bu9sPdlRVH1yoGmWo1uuatgHuqmZjj31TGdq2K4z8y13tlqnZDYPJ6oLNPWDOM2jJFvnhesFU38OnwWLMcJBQB4OjBfhMqlq3vT97p5y6/Y3d7+/d+fb7x798lh0PVRR3lT1sYsh8kYmgUVBOUnysu/7a9dvEELeefvUmxsbZ8+dR/2x+Hx5iOgFC3+xBIZgqWKOAaVFRZJiIH9x+TJ548THP4en39s8f/b9w7TUHU+zZ47/SnM8w/VxtGaBOQuADce3/UVW0iPylS+voPKZDy9unHzrwuZmWnE3WE4X4TyMV+s8Sgv4OitXCXCOXSAOZOwAPd+//+O7pz+49NGln+49uP31nYLxKMnjtMC9vKrRf0l5QV8DNgDkCVI5rdd5tThM80qwWoA2XAJfkktWoybWjgyqAYMyOuGiYfi1LQKikABn6QNojjLyqUwCjE5+f/zr559+cqCq05mnG4ZhWlmWYQpd1/X/ai3Iu892v7p58zDCCIokzaIkYTXv/5uRoqziFMWyVUa9lC9zTvHZQLAQTBp01rAWn7TgnAMiOeoiYRQ/V15qtqOa9r5uKZqxp+wbpmla1tCDZWu6rrxUta0tW5l4wdydurphYhQDeVm1+5Ew18JOhJM0atxYq9KburY0z/NeTCb+Moqf/sD83UFr1/4tGx3mRVkUZVlRGDqvKItZF7M2LJuI4j94NLlO+j9nSWrOKV4gmmEfMmIH8k/bsqalYlgPbmO2nSR1kjwCEsfrcBXhFf3/NzJq4JikEMeSpJRWHodLtK6H+q+V4+mgBmSI7PqOYQOSPE7j+Dg2h77QzTG5pEyy+r8AsddBwghYi3kAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;La respuesta de Dan Abramov a mi tweet random&quot;
+        title=&quot;La respuesta de Dan Abramov a mi tweet random&quot;
+        src=&quot;/static/b4ee015ac2edf5b63dfa70c704fb729d/b9e4f/dan-abramov-tweet.png&quot;
+        srcset=&quot;/static/b4ee015ac2edf5b63dfa70c704fb729d/cf440/dan-abramov-tweet.png 148w,
+/static/b4ee015ac2edf5b63dfa70c704fb729d/d2d38/dan-abramov-tweet.png 295w,
+/static/b4ee015ac2edf5b63dfa70c704fb729d/b9e4f/dan-abramov-tweet.png 590w,
+/static/b4ee015ac2edf5b63dfa70c704fb729d/b1c25/dan-abramov-tweet.png 605w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[Hola a todos! soy Vero. Soy licenciada en informática, trato de ser autodidacta. Trabajo hace 2 años como Frontend Developer en una empresa…]]></description><link>https://gatsby-starter-blog-demo.netlify.com//29-05-2019-hello-world/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//29-05-2019-hello-world/</guid><pubDate>Tue, 21 May 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hola a todos! soy Vero. Soy licenciada en informática, trato de ser autodidacta. Trabajo hace 2 años como Frontend Developer en una empresa de outsourcing y estoy tratando de hacerlo cada vez mejor.&lt;/p&gt;
 &lt;p&gt;Este es mi “primer” intento de blog, aunque ya tenía uno en Wordpress que nunca hice público. Por si te da curiosidad éste está hecho con &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;GatsbyJS&lt;/a&gt; y el &lt;a href=&quot;https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;gatsby-starter-blog&lt;/a&gt; con algunos tweaks en estilos y tema (no los suficientes), todavía quiero personalizar mucho más mi blog.&lt;/p&gt;
 &lt;p&gt;Aqui trataré de escribir periodicamente de cosas que son muy interesantes para mi, espero que para muchos también. Voy a publicar posts de ReactJS, ReactNative, git y sus cosas raras, accesibility, linux y software libre.&lt;/p&gt;
 &lt;p&gt;Eso es todo por este post inicial. Saludos.&lt;/p&gt;</content:encoded></item></channel></rss>
