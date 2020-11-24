@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Este es un Hotfix!]]></title><description><![CDATA[Recien comenzando.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 21 Jan 2020 03:12:32 GMT</lastBuildDate><item><title><![CDATA[ADB para desarrolladores en React Native]]></title><description><![CDATA[En el tiempo que llevo desarrollando aplicaciones móviles con React Native muchas veces he tenido que abrir AndroidStudio para poder hacer…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/adb-for-react-native-developers/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/adb-for-react-native-developers/</guid><pubDate>Fri, 17 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;En el tiempo que llevo desarrollando aplicaciones móviles con React Native muchas veces he tenido que abrir AndroidStudio para poder hacer &lt;em&gt;algo&lt;/em&gt; relacionado con el dispositivo (emulador o dispositivo físico).&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Este es un Hotfix!]]></title><description><![CDATA[Recien comenzando.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 24 Nov 2020 04:07:21 GMT</lastBuildDate><item><title><![CDATA[Semi-automatización de TMUX]]></title><description><![CDATA[Desde hace tiempo que uso TMUX para hacer mas efectivo y fluido mi tiempo en la terminal. Como en el trabajo paso la mayor parte del tiempo…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/tmux-semi-automatizacion/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/tmux-semi-automatizacion/</guid><pubDate>Sat, 21 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Desde hace tiempo que uso &lt;a href=&quot;https://github.com/tmux/tmux&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;TMUX&lt;/a&gt; para hacer mas efectivo y fluido mi tiempo en la terminal.&lt;/p&gt;
+&lt;p&gt;Como en el trabajo paso la mayor parte del tiempo desarrollando una app en React Native mi configuracion de TMUX luce siempre igual y los paneles los uso para los mismos propósitos. Mis sesiones se ven asi:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt; ------------------------------
+|      1       |               |
+ --------------|       3       |
+|      2       |               |
+ ------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;El panel 1 se mantiene estático corriendo el metro-bundler de la app.&lt;/p&gt;
+&lt;p&gt;El panel 2 lo utilizo para ejecutar &lt;code class=&quot;language-text&quot;&gt;npx react-native run-{platform}&lt;/code&gt; y para comandos git.&lt;/p&gt;
+&lt;p&gt;El panel 3 tiene el emulador corriendo.&lt;/p&gt;
+&lt;p&gt;Normalmente iniciaba tmux y manualmente construía los paneles e iniciaba las mismas tareas en cada panel, se hizo repetitivo hacerlo a diario.&lt;/p&gt;
+&lt;p&gt;Investigando un poco descubrí que puedo lograr la disposición de los paneles y las tareas de cada uno con un simple comando al momento de iniciar la sesión TMUX. Entonces esas son mis dos metas, lograr la estructura del layout e iniciar las tareas en cada panel.&lt;/p&gt;
+&lt;h2 id=&quot;paneles-en-proceso&quot;&gt;&lt;a href=&quot;#paneles-en-proceso&quot; aria-label=&quot;paneles en proceso permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Paneles en proceso…&lt;/h2&gt;
+&lt;p&gt;Para lograr el layout de &lt;strong&gt;manera manual&lt;/strong&gt; siempre sigo los siguientes pasos:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ tmux          # Inicia sesión TMUX
+C-b %           # Divide la pantalla en 2 verticalmente
+C-b q 1         # Regresa a la primera mitad
+C-b &amp;quot;           # Divide el primer panel en 2 horizontalmente&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Para lograr el layout desde el momento que se inicia la sesión TMUX la sintaxis es diferente ya que en ese momento no se tiene acceso a los atajos de teclado como son &lt;code class=&quot;language-text&quot;&gt;C-b&lt;/code&gt;y &lt;code class=&quot;language-text&quot;&gt;M-x&lt;/code&gt;, pero tenemos comandos de tmux, necesitamos inicialmente dos (&lt;code class=&quot;language-text&quot;&gt;split-window&lt;/code&gt; y &lt;code class=&quot;language-text&quot;&gt;select-pane&lt;/code&gt;). Como prueba inicial tendremos:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ tmux new-session \; \
+split-window -h
+
+# Resultado
+ ------------------------------
+|              |               |
+|      1       |       2       |
+|              |               |
+ ------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;El argumento &lt;code class=&quot;language-text&quot;&gt;-h&lt;/code&gt; indica que la ventana se dividirá en dos paneles de manera horizontal, el siguiente paso es dividir el Panel 1 en dos paneles verticalmente, por lo que complementando el comando es:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ tmux new-session \; \
+split-window -h \; \
+split-window -v \;
+
+# Resultado
+ ------------------------------
+|              |       2       |
+|      1       |---------------|
+|              |       3       |
+ ------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;El resultado obtenido hasta el momento no es exactamente lo que busco, pero hay que tomar en cuenta la manera como TMUX funciona, una vez que se divide la pantalla en paneles TMUX escoge el panel activo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cuando se divide horizontalmente el panel activo es el de la derecha&lt;/li&gt;
+&lt;li&gt;cuando se divide verticalmente el panel activo es el de abajo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En este caso dado que tenía dos paneles (1 y 2) separados horizontalmente, el siguiente &lt;code class=&quot;language-text&quot;&gt;split-window&lt;/code&gt; dividirá el panel 2. La solución es seleccionar manualmente el panel 1 antes de dividirlo verticalmente usando el comando &lt;code class=&quot;language-text&quot;&gt;select-pane&lt;/code&gt; como sigue:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ tmux new-session \; \
+split-window -h \; \
+select-pane -t 1 \; \
+split-window -v \;
+
+# Resultado
+ ------------------------------
+|      1       |               |
+ --------------|       3       |
+|      2       |               |
+ ------------------------------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🎉🎉🎉 Listo!, el layout es como quiero…&lt;/p&gt;
+&lt;h2 id=&quot;inicio-de-tareas-en-cada-panel&quot;&gt;&lt;a href=&quot;#inicio-de-tareas-en-cada-panel&quot; aria-label=&quot;inicio de tareas en cada panel permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inicio de tareas en cada panel&lt;/h2&gt;
+&lt;p&gt;Ya que el layout está listo ahora queda iniciar las tareas en cada panel.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Panel 1 para iniciar el metro bundler&lt;/li&gt;
+&lt;li&gt;Panel 2 para ejecutar &lt;code class=&quot;language-text&quot;&gt;npx react-native run-{platform}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Panel 3 para ejecutar el emulador&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para lograrlo se utiliza el comando &lt;code class=&quot;language-text&quot;&gt;send-keys&lt;/code&gt; seguido de &lt;code class=&quot;language-text&quot;&gt;C-m&lt;/code&gt; que es un parámetro que ejecuta el comando. Cada que se cree un panel iniciaremos su tarea.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ tmux new-session \; \
+send-keys &amp;#39;yarn &amp;amp;&amp;amp; yarn start&amp;#39; C-m \; \
+split-window -h \; \
+send-keys &amp;#39;androidemu @Pixel3a&amp;#39; C-m \; \
+select-pane -t 1 \; \
+split-window -v \; \
+send-keys &amp;#39;npx react-native run-android&amp;#39; C-m \;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;🎉🎉🎉 Listo! añadiendo &lt;code class=&quot;language-text&quot;&gt;send-keys&lt;/code&gt; cuando se crea cada panel se inicia la tarea de cada uno. Ahora cada vez que quiero iniciar TMUX para trabajar en la app de react-native solo tengo que copiar y pegar ese ultimo comando en una terminal que este en el directorio raiz del proyecto.&lt;/p&gt;
+&lt;h2 id=&quot;mejoras&quot;&gt;&lt;a href=&quot;#mejoras&quot; aria-label=&quot;mejoras permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mejoras&lt;/h2&gt;
+&lt;p&gt;Hay un par de detalles que se pueden mejorar, la primera es que tengo que cambiar de directorio a la raiz del proyecto antes de copiar y pegar el comando de TMUX, eso se puede mejorar!. El comando &lt;code class=&quot;language-text&quot;&gt;new-session&lt;/code&gt; tiene disponible la bandera &lt;code class=&quot;language-text&quot;&gt;-c&lt;/code&gt; con la que se puede especificar el directorio en el cual se inicia la sesión de TMUX, aplicando esto tenemos:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ tmux new-session -c /path/to/react-native-project \; \
+send-keys &amp;#39;yarn &amp;amp;&amp;amp; yarn start&amp;#39; C-m \; \
+split-window -h \; \
+send-keys &amp;#39;androidemu @Pixel3a&amp;#39; C-m \; \
+select-pane -t 1 \; \
+split-window -v \; \
+send-keys &amp;#39;npx react-native run-android&amp;#39; C-m \;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Con el uso de &lt;code class=&quot;language-text&quot;&gt;-c&lt;/code&gt; se ahorra el paso de tener que estar en la raiz del proyecto antes de copiar y pegar el comando de TMUX. Desde cualquier directorio en el que esté la terminal la sesión de TMUX iniciará en el proyecto deseado.&lt;/p&gt;
+&lt;p&gt;La ultima mejora es darle un nombre a la sesión, la bandera &lt;code class=&quot;language-text&quot;&gt;-n&lt;/code&gt; de &lt;code class=&quot;language-text&quot;&gt;new-session&lt;/code&gt; hace justo esto:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ tmux new-session -n tmux-rules -c /path/to/react-native-project \; \
+send-keys &amp;#39;yarn &amp;amp;&amp;amp; yarn start&amp;#39; C-m \; \
+split-window -h \; \
+send-keys &amp;#39;androidemu @Pixel3a&amp;#39; C-m \; \
+select-pane -t 1 \; \
+split-window -v \; \
+send-keys &amp;#39;npx react-native run-android&amp;#39; C-m \;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;MISIÓN CUMPLIDA&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Este &lt;a href=&quot;https://gist.github.com/Veuge/4d460396bc459bf23093318f34a8186f&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;gist&lt;/a&gt; tiene el resultado final &lt;/p&gt;
+&lt;h2 id=&quot;referencias&quot;&gt;&lt;a href=&quot;#referencias&quot; aria-label=&quot;referencias permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Referencias&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tmux/tmux/wiki/Getting-Started&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;TMUX Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://man7.org/linux/man-pages/man1/tmux.1.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;TMUX Man Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/5609192/how-to-set-up-tmux-so-that-it-starts-up-with-specified-windows-opened&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Este hilo de StackOverflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[ADB para desarrolladores en React Native]]></title><description><![CDATA[En el tiempo que llevo desarrollando aplicaciones móviles con React Native muchas veces he tenido que abrir AndroidStudio para poder hacer…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/adb-for-react-native-developers/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/adb-for-react-native-developers/</guid><pubDate>Fri, 17 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;En el tiempo que llevo desarrollando aplicaciones móviles con React Native muchas veces he tenido que abrir AndroidStudio para poder hacer &lt;em&gt;algo&lt;/em&gt; relacionado con el dispositivo (emulador o dispositivo físico).&lt;/p&gt;
 &lt;p&gt;Para aquellos que alguna vez han desarrollado para Android saben que AndroidStudio tarda un par de minutos en iniciar y que consume mucha memoria. Tiempo y recursos que no valen la pena ser utilizados para tareas sencillas y repetitivas…&lt;/p&gt;
 &lt;p&gt;Aprender un par de comandos de ADB me ha ayudado a hacer dichas tareas de manera más sencilla y rápida usando la línea de comandos, sin mencionar que me gusta mucho hacer cosas con la terminal :P.&lt;/p&gt;
 &lt;h1 id=&quot;¿qué-es-adb&quot;&gt;&lt;a href=&quot;#%C2%BFqu%C3%A9-es-adb&quot; aria-label=&quot;¿qué es adb permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;¿Qué es ADB?&lt;/h1&gt;
