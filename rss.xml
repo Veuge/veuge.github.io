@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Este es un Hotfix!]]></title><description><![CDATA[Recien comenzando.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 19 Dec 2020 03:20:19 GMT</lastBuildDate><item><title><![CDATA[Semi-automatización de TMUX]]></title><description><![CDATA[Desde hace tiempo que uso TMUX para hacer mas efectivo y fluido mi tiempo en la terminal. Como en el trabajo paso la mayor parte del tiempo…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/tmux-semi-automatizacion/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/tmux-semi-automatizacion/</guid><pubDate>Sat, 21 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Desde hace tiempo que uso &lt;a href=&quot;https://github.com/tmux/tmux&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;TMUX&lt;/a&gt; para hacer mas efectivo y fluido mi tiempo en la terminal.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Este es un Hotfix!]]></title><description><![CDATA[Recien comenzando.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 29 Apr 2021 03:24:49 GMT</lastBuildDate><item><title><![CDATA[¿Cómo arreglar el icono de Slack en Debian - XFCE]]></title><description><![CDATA[Por un tiempo me ha estado molestando mucho que algunas aplicaciones (Slack, React-Native Debugger y algunas otras instaladas con ) se vean…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/xfce-panel-slack-window-icon/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/xfce-panel-slack-window-icon/</guid><pubDate>Thu, 22 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Por un tiempo me ha estado molestando mucho que algunas aplicaciones (&lt;a href=&quot;https://slack.com/intl/en-bo/downloads/linux&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Slack&lt;/a&gt;, &lt;a href=&quot;https://github.com/jhen0409/react-native-debugger&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;React-Native Debugger&lt;/a&gt; y algunas otras instaladas con &lt;code class=&quot;language-text&quot;&gt;.deb&lt;/code&gt;) se vean sin icono en el panel de programas de XFCE.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 358px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b465d15f4d1a95b12c42b573c0fe3a57/f948d/window-panel.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 9.217877094972067%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeUlEQVQI1w3MSw7CIBQAwJ7GqEER+vjDK580LanWNNGNunXj/Q8gB5jpFo5U6vtzG+bl91HfdzgwhWO9PV42oBuSMC6kHMuIufRKYyoO4+5IKMhO94ZwUeqkY95mulbYU/AxT9eVCdnkmQMDqayX1p8YgDataJhc+B8YoBw5kX9iCwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Panel de XFCE con icono faltante de Slack&quot;
+        title=&quot;Panel de XFCE con icono faltante de Slack&quot;
+        src=&quot;/static/b465d15f4d1a95b12c42b573c0fe3a57/f948d/window-panel.png&quot;
+        srcset=&quot;/static/b465d15f4d1a95b12c42b573c0fe3a57/cf440/window-panel.png 148w,
+/static/b465d15f4d1a95b12c42b573c0fe3a57/d2d38/window-panel.png 295w,
+/static/b465d15f4d1a95b12c42b573c0fe3a57/f948d/window-panel.png 358w&quot;
+        sizes=&quot;(max-width: 358px) 100vw, 358px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Al parecer es un bug de la aplicación en si o quizas algo con las aplicaciones Electrón en Debian, incluso pasa cuando se instala con SnapStore. De cualquier manera me molesta.&lt;/p&gt;
+&lt;p&gt;Me pasé un buen rato investigando y el item &lt;a href=&quot;https://docs.xfce.org/xfce/xfce4-panel/4.12/tasklist&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Window Buttons&lt;/a&gt; obtiene su configuracion mediante los archivos &lt;code class=&quot;language-text&quot;&gt;.desktop&lt;/code&gt; de los diferentes programas. Buscando este archivo de Slack da como resultado:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ sudo find / -iname &amp;quot;*slack*.desktop&amp;quot;
+
+# Output
+/home/veuge/.config/autostart/slack.desktop
+/usr/share/applications/slack.desktop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;El archivo en el directorio &lt;code class=&quot;language-text&quot;&gt;$HOME/.config/autostart&lt;/code&gt; es un symlink del de &lt;code class=&quot;language-text&quot;&gt;/usr/share/applications&lt;/code&gt;, entonces con arreglar este es suficiente. El contenido de este &lt;code class=&quot;language-text&quot;&gt;.desktop&lt;/code&gt; es:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ cat /usr/share/applications/slack.desktop
+
+# Output
+[Desktop Entry]
+Name=Slack
+StartupWMClass=Slack
+Comment=Slack Desktop
+GenericName=Slack Client for Linux
+Exec=/usr/bin/slack %U
+Icon=/usr/share/pixmaps/slack.png
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Network;InstantMessaging;
+MimeType=x-scheme-handler/slack;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;La linea interesante aqui es &lt;code class=&quot;language-text&quot;&gt;Icon=/usr/share/pixmaps/slack.png&lt;/code&gt;, el archivo de imagen especificado es totalmente válido, existe y tiene permisos correctos.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ ls -l /usr/share/pixmaps/slack.png 
+
+# Output
+-rw-rw-r-- 1 root root 38884 Mar 15 20:12 /usr/share/pixmaps/slack.png&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Como parece que todo anda bien en la configuración pareciera que es un bug en aplicaciones de &lt;a href=&quot;https://www.electronjs.org/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;ElectronJS&lt;/a&gt;, así que debe haber alguna otra manera de arreglar esto. Por suerte encontré &lt;a href=&quot;https://www.reddit.com/r/xfce/comments/g3m4zk/icon_absent_for_snap_package_installed/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;esta&lt;/a&gt; discusión, como dice el segundo comentario la solución o workaround es modificar el icono una vez que esté abierta la aplicación, para esto se siguen dos pasos&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Obtener el ID de la ventana de Slack utilizando &lt;code class=&quot;language-text&quot;&gt;xwininfo&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Actualizar el icono de la ventana utilizando el ID con &lt;code class=&quot;language-text&quot;&gt;xseticon&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Siguiendo estos pasos manualmente el proceso es:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;$ xwininfo -root -tree | sed -e &amp;#39;s/^ *//&amp;#39;| grep -E &amp;#39;0x.*Slack\s{1}\|&amp;#39; | awk &amp;#39;{print $1}&amp;#39;
+
+# Output
+0x4400005
+
+$ xseticon -id 0x4400005 /usr/share/pixmaps/slack.png&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Una vez se ejecuta el comando &lt;code class=&quot;language-text&quot;&gt;xtseticon&lt;/code&gt; el resultado es:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 369px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/be7703efd90f2a358404b77e2abbe573/63a25/window-panel-after.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 8.672086720867208%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAIAAADXZGvcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVQI1w3MTQrCMBBA4Z7GhbaEdDrJJJMfbZoqVYoKKthljuD9wWwffK8Riq6PNd3W7Um/wh0yst9K4XB0cVSWjQsx5ZgmzX4w9pRnAbjbt2Bd0wKOl9nn8zLJ770/AIGiz/sF2mh2EpXoh7qwPtReGTnfSahYoP4DJcMcebBwl6UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Panel de XFCE con icono válido de Slack&quot;
+        title=&quot;Panel de XFCE con icono válido de Slack&quot;
+        src=&quot;/static/be7703efd90f2a358404b77e2abbe573/63a25/window-panel-after.png&quot;
+        srcset=&quot;/static/be7703efd90f2a358404b77e2abbe573/cf440/window-panel-after.png 148w,
+/static/be7703efd90f2a358404b77e2abbe573/d2d38/window-panel-after.png 295w,
+/static/be7703efd90f2a358404b77e2abbe573/63a25/window-panel-after.png 369w&quot;
+        sizes=&quot;(max-width: 369px) 100vw, 369px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Obviamente como dice la discusión en Reddit, no es optimo seguir ese proceso manualmente cada que se abre Slack (o cualquier otra aplicación con este problema), entonces la manera de actualizar es modificando el parametro &lt;code class=&quot;language-text&quot;&gt;Exec&lt;/code&gt; en &lt;code class=&quot;language-text&quot;&gt;/usr/share/applications/slack.desktop&lt;/code&gt; para modificar el icono cuando hay la certeza que Slack ha iniciado.&lt;/p&gt;
+&lt;p&gt;Para esto el repliqué el proceso descrito en &lt;a href=&quot;https://www.reddit.com/r/xfce/comments/g3m4zk/icon_absent_for_snap_package_installed/fnvijl2?utm_source=share&amp;#x26;utm_medium=web2x&amp;#x26;context=3&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;este comentario&lt;/a&gt; dentro de un &lt;a href=&quot;https://github.com/Veuge/Configuration-files/blob/master/slack-init.sh&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;script&lt;/a&gt;, y finalmente ese script ejecutarlo en &lt;code class=&quot;language-text&quot;&gt;slack.desktop&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Desglosando el script:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# Permite sobreescribir el .desktop
+env BAMF_DESKTOP_FILE_HINT=$SLACK_DESKTOP
+
+# Comando que abre Slack minimizado y sin output
+/usr/bin/slack -u %U &amp;amp; &amp;gt; /dev/null
+
+# Pausa para esperar que Slack inicie
+sleep 10
+
+# Obtiene window ID de Slack y lo guarda en la variable app_wid
+app_wid=$(xwininfo -root -tree |sed -e &amp;#39;s/^ *//&amp;#39;|grep -E &amp;#39;0x.*Slack\s{1}\|&amp;#39; | awk &amp;#39;{print $1}&amp;#39;)
+
+# Actualiza el ícono dado el window ID y el icono en png.
+xseticon -id $app_wid $SLACK_ICON&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Y utilizando el script en el archivo &lt;code class=&quot;language-text&quot;&gt;.desktop&lt;/code&gt; en &lt;code class=&quot;language-text&quot;&gt;Exec&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;[Desktop Entry]
+Name=Slack
+StartupWMClass=Slack
+Comment=Slack Desktop
+GenericName=Slack Client for Linux
+Exec=sh -c /home/veuge/slack-init.sh
+Icon=/usr/share/pixmaps/slack.png
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Network;InstantMessaging;
+MimeType=x-scheme-handler/slack;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;conclusión&quot;&gt;&lt;a href=&quot;#conclusi%C3%B3n&quot; aria-label=&quot;conclusión permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusión&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Esta solución es solo un workaround para restaurar el icono de Slack y otras aplicaciones en XFCE, idealmente se deberia determinar exactamente la razon por la cual el icono no está disponible.&lt;/li&gt;
+&lt;li&gt;El workaround funciona bien cuando se inicia manualmente Slack y cuando está entre la aplicacion que se auto-inician al iniciar sesión.&lt;/li&gt;
+&lt;li&gt;Se puede mejorar el script para hacerlo mas configurable para que sea extensible a otras aplicaciones con este error en el ícono. (Lo haré en algun momento…)&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Semi-automatización de TMUX]]></title><description><![CDATA[Desde hace tiempo que uso TMUX para hacer mas efectivo y fluido mi tiempo en la terminal. Como en el trabajo paso la mayor parte del tiempo…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/tmux-semi-automatizacion/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/tmux-semi-automatizacion/</guid><pubDate>Sat, 21 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Desde hace tiempo que uso &lt;a href=&quot;https://github.com/tmux/tmux&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;TMUX&lt;/a&gt; para hacer mas efectivo y fluido mi tiempo en la terminal.&lt;/p&gt;
 &lt;p&gt;Como en el trabajo paso la mayor parte del tiempo desarrollando una app en React Native mi configuracion de TMUX luce siempre igual y los paneles los uso para los mismos propósitos. Mis sesiones se ven asi:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt; ------------------------------
 |      1       |               |
