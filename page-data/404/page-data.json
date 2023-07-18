@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-404-jsx","path":"/404/","webpackCompilationHash":"e300dd9b5a798c444b71","result":{"data":{"site":{"siteMetadata":{"title":"Este es un Hotfix!"}}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{
+    "componentChunkName": "component---src-pages-404-jsx",
+    "path": "/404/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": []}
